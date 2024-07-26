@@ -377,65 +377,6 @@ import Feature from "./components/Feature.vue";
       </div>
     </div>
 
-    <div class="row justify-center q-pa-xl">
-      <div class="col-xs-12 col-md-3 col-lg-3 flex justify-center items-center q-pr-sm">
-        <q-card class="my-card">
-          <img src="https://cdn.quasar.dev/img/mountains.jpg" />
-
-          <q-card-section>
-            <div class="text-h6">Our Changing Planet</div>
-            <div class="text-subtitle2">by John Doe</div>
-          </q-card-section>
-
-          <q-card-section class="q-pt-none">
-            {{ lorem }}
-          </q-card-section>
-        </q-card>
-      </div>
-      <div class="col-xs-12 col-md-3 col-lg-3 flex justify-center items-center q-pr-sm">
-        <q-card class="my-card">
-          <img src="https://cdn.quasar.dev/img/mountains.jpg" />
-
-          <q-card-section>
-            <div class="text-h6">Our Changing Planet</div>
-            <div class="text-subtitle2">by John Doe</div>
-          </q-card-section>
-
-          <q-card-section class="q-pt-none">
-            {{ lorem }}
-          </q-card-section>
-        </q-card>
-      </div>
-      <div class="col-xs-12 col-md-3 col-lg-3 flex justify-center items-center q-pr-sm">
-        <q-card class="my-card">
-          <img src="https://cdn.quasar.dev/img/mountains.jpg" />
-
-          <q-card-section>
-            <div class="text-h6">Our Changing Planet</div>
-            <div class="text-subtitle2">by John Doe</div>
-          </q-card-section>
-
-          <q-card-section class="q-pt-none">
-            {{ lorem }}
-          </q-card-section>
-        </q-card>
-      </div>
-      <div class="col-xs-12 col-md-3 col-lg-3 flex justify-center items-center q-pr-sm">
-        <q-card class="my-card">
-          <img src="https://cdn.quasar.dev/img/mountains.jpg" />
-
-          <q-card-section>
-            <div class="text-h6">Our Changing Planet</div>
-            <div class="text-subtitle2">by John Doe</div>
-          </q-card-section>
-
-          <q-card-section class="q-pt-none">
-            {{ lorem }}
-          </q-card-section>
-        </q-card>
-      </div>
-    </div>
-
     <!-- 價格卡片 -->
     <div>
       <div class="q-px-xl">
