@@ -3,12 +3,9 @@
     <q-card class="my-card">
       <q-card-section class="crad-section">
         <!-- FIXME: q-mt-md q-mb-md > q-my-md -->
-        <div
-          class="column justify-center items-center q-gutter-sm q-mt-md q-mb-md"
-        >
-          <div
-            class="text-h4 justify-center items-center q-gutter-sm text-weight-bolder"
-          >
+        <!-- FIXED -->
+        <div class="column justify-center items-center q-gutter-sm q-my-md">
+          <div class="text-h4 justify-center items-center q-gutter-sm text-weight-bolder">
             {{ cardTitle }}
           </div>
           <!-- 使用v-bind綁定src屬性 -->
@@ -30,9 +27,8 @@
 
       <q-card-actions vertical>
         <!-- FIXME: q-mb-md q-mt-md q-mr-md q-ml-md > q-ma-md -->
-        <q-list
-          class="row justify-start items-center q-mb-md q-mt-md q-mr-md q-ml-md"
-        >
+        <!-- FIXE  -->
+        <q-list class="row justify-start items-center q-ma-md">
           <q-item class="row justify-start items-center q-gutter-sm">
             <li>
               <span class="text-h6 text-weight-medium">資料表總數量 </span>
@@ -42,9 +38,7 @@
           <q-item class="row justify-start items-center q-gutter-sm">
             <li>
               <span class="text-h6 text-weight-medium">資料容量 </span>
-              <span class="text-h6 text-weight-bold">{{
-                materialCapacity
-              }}</span>
+              <span class="text-h6 text-weight-bold">{{ materialCapacity }}</span>
             </li>
           </q-item>
           <q-item class="row justify-start items-center q-gutter-sm">

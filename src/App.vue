@@ -1,22 +1,24 @@
 <script setup>
 // FIXME: 沒有用到
-import "quasar/dist/quasar.sass";
+// FIXED
 // FIXME: 沒有用掉要移除
-import { Quasar } from "quasar";
+// FIXED
 import Card from "./components/card.vue";
 // FIXME: 沒有用掉要移除
-import Feature from "./components/Feature.vue";
+// FIXED
 // FIXME: 沒有用掉要移除
-// const painPoints1 = require("@/assets/painPoints1.png");
+// FIXED
 </script>
 
 <template>
   <div class="column">
     <!-- nav bar -->
     <!-- FIXME: q-pt-lg q-pb-lg q-pl-lg q-pr-lg > q-pa-lg -->
+    <!-- FIXED -->
     <!-- FIXME: flex inline 可以不用 -->
+    <!-- FIXED -->
     <div
-      class="q-pt-lg q-pb-lg q-pl-lg q-pr-lg flex row inline no-wrap items-start justify-start"
+      class="q-pa-lg row no-wrap items-start justify-start"
       style="width: 100%"
     >
       <!-- FIXME:  style 可以改用 class 取代 （除非有需要用到 style bind 動態修改）-->
@@ -32,9 +34,11 @@ import Feature from "./components/Feature.vue";
     </div>
     <!--banner-->
     <!-- FIXME: flex-col 無作用  -->
-    <div class="q-pa-md bg-image flex flex-col items-center justify-start">
+    <!-- FIXED -->
+    <div class="q-pa-md bg-image flex items-center justify-start">
       <!-- FIXME: items-center justify-center 無作用 -->
-      <div class="q-pa-xl items-center justify-center">
+      <!-- FIXED -->
+      <div class="q-pa-xl">
         <div class="row justify-start">
           <h2 class="text-weight-bold responsive-h2">簡單步驟，</h2>
         </div>
@@ -145,20 +149,23 @@ import Feature from "./components/Feature.vue";
         <h3 class="text-weight-bold responsive-h3">產品特色</h3>
       </div>
       <!-- FIXME: 可以改用 q-pt-md q-pb-md > q-py-md -->
-      <div class="row justify-center q-pt-md q-pb-md">
+      <!-- FIXED -->
+      <div class="row justify-center q-py-md">
         <h4 class="text-weight-bold text-center responsive-h4">
           『啟動數位化引擎，推動企業內部效率革新』
         </h4>
       </div>
       <div class="q-pt-xl responsive-margin">
         <!-- FIXME: example-row-equal-width 沒用到 -->
-        <div class="example-row-equal-width">
+        <!-- FIXED -->
+        <div>
           <!-- 上排 -->
           <div class="row">
             <!-- FIXME: 建議 相似的結構，可以考慮拆成 component 重復使用 -->
             <!-- FIXME: text-center flex-col 沒用到 -->
+            <!-- FIXED -->
             <div
-              class="col-xs-12 col-md-4 q-pr-md q-pb-md text-center flex items-center justify-center"
+              class="col-xs-12 col-md-4 q-pr-md q-pb-md items-center justify-center"
             >
               <!-- FIXME: 儘量使用 class 取代 style -->
               <q-img
@@ -169,7 +176,8 @@ import Feature from "./components/Feature.vue";
               />
               <div class="column">
                 <!-- FIXME: q-pt-lg q-pb-lg > q-py-lg -->
-                <h5 class="text-weight-bold q-pt-lg q-pb-lg text-center">
+                <!-- FIXED -->
+                <h5 class="text-weight-bold q-py-lg text-center">
                   無程式碼DIY專屬系統
                 </h5>
                 <!-- FIXME: 儘量使用 class 取代 style -->
@@ -201,8 +209,9 @@ import Feature from "./components/Feature.vue";
               </div>
             </div>
             <!-- FIXME: text-center flex-col 沒用到 -->
+            <!-- FIXED -->
             <div
-              class="col-xs-12 col-md-4 q-pr-md q-pb-md text-center flex flex-col items-center justify-center"
+              class="col-xs-12 col-md-4 q-pr-md q-pb-md flex items-center justify-center"
             >
               <q-img
                 src="src/assets/feature2.png"
@@ -212,7 +221,8 @@ import Feature from "./components/Feature.vue";
               />
               <div class="column">
                 <!-- FIXME: q-pt-lg q-pb-lg > q-py-lg -->
-                <h5 class="text-weight-bold q-pt-lg q-pb-lg text-center">
+                <!-- FIXED -->
+                <h5 class="text-weight-bold q-py-lg text-center">
                   一站式整合服務
                 </h5>
                 <!-- FIXME: 儘量使用 class 取代 style -->
@@ -233,9 +243,8 @@ import Feature from "./components/Feature.vue";
               </div>
             </div>
             <!-- FIXME: text-center flex-col 沒用到 -->
-            <div
-              class="col-xs-12 col-md-4 text-center flex flex-col items-center justify-center"
-            >
+            <!-- FIXED -->
+            <div class="col-xs-12 col-md-4 flex items-center justify-center">
               <q-img
                 src="src/assets/feature3.png"
                 fit="contain"
@@ -244,7 +253,8 @@ import Feature from "./components/Feature.vue";
               />
               <div class="column">
                 <!-- FIXME: q-pt-lg q-pb-lg > q-py-lg -->
-                <h5 class="text-weight-bold q-pt-lg q-pb-lg text-center">
+                <!-- FIXED -->
+                <h5 class="text-weight-bold q-py-lg text-center">
                   VIP控管資料存取
                 </h5>
                 <!-- FIXME: 儘量使用 class 取代 style -->
@@ -287,7 +297,8 @@ import Feature from "./components/Feature.vue";
               />
               <div class="column">
                 <!-- FIXME: q-pt-lg q-pb-lg > q-py-lg -->
-                <h5 class="text-weight-bold q-pt-lg q-pb-lg text-center">
+                <!-- FIXED -->
+                <h5 class="text-weight-bold q-py-lg text-center">
                   商業智慧視覺化分析
                 </h5>
                 <!-- FIXME: 儘量使用 class 取代 style -->
@@ -322,7 +333,8 @@ import Feature from "./components/Feature.vue";
               />
               <div class="column">
                 <!-- FIXME: q-pt-lg q-pb-lg > q-py-lg -->
-                <h5 class="text-weight-bold q-pt-lg q-pb-lg text-center">
+                <!-- FIXED -->
+                <h5 class="text-weight-bold q-py-lg text-center">
                   雲端資訊安全有保障
                 </h5>
                 <!-- FIXME: 儘量使用 class 取代 style -->
@@ -369,41 +381,32 @@ import Feature from "./components/Feature.vue";
         </h4>
       </div>
       <div class="q-pt-xl responsive-margin">
-        <div class="example-row-equal-width">
+        <div>
           <div class="column">
             <!-- FIXME: 只有 q-pb-md 有需要，可以直接寫在 img 不用多包一層 div -->
-            <div
-              class="col-12 q-pr-md q-pb-md text-center flex flex-col items-center justify-center"
-            >
-              <q-img
-                src="src/assets/situation1.png"
-                fit="contain"
-                spinner-color="white"
-                class="responsive-img"
-              />
-            </div>
+            <!-- FIXED -->
+            <q-img
+              src="src/assets/situation1.png"
+              fit="contain"
+              spinner-color="white"
+              class="q-pb-md responsive-img"
+            />
             <!-- FIXME: 只有 q-pb-md 有需要，可以直接寫在 img 不用多包一層 div -->
-            <div
-              class="col-12 q-pr-md q-pb-md text-center flex flex-col items-center justify-center"
-            >
-              <q-img
-                src="src/assets/situation2.png"
-                fit="contain"
-                spinner-color="white"
-                class="responsive-img"
-              />
-            </div>
+            <!-- FIXED -->
+            <q-img
+              src="src/assets/situation2.png"
+              fit="contain"
+              spinner-color="white"
+              class="q-pb-md responsive-img"
+            />
             <!-- FIXME: 只有 q-pb-md 有需要，可以直接寫在 img 不用多包一層 div -->
-            <div
-              class="col-12 q-pr-md q-pb-md text-center flex flex-col items-center justify-center"
-            >
-              <q-img
-                src="src/assets/situation3.png"
-                fit="contain"
-                spinner-color="white"
-                class="responsive-img"
-              />
-            </div>
+            <!-- FIXED -->
+            <q-img
+              src="src/assets/situation3.png"
+              fit="contain"
+              spinner-color="white"
+              class="q-pb-md responsive-img"
+            />
           </div>
         </div>
       </div>
@@ -416,9 +419,11 @@ import Feature from "./components/Feature.vue";
           <h3 class="text-weight-bold responsive-h3">雲端方案介紹</h3>
         </div>
         <!-- FIXME: q-pt-md q-pb-md > q-py-md -->
-        <div class="row justify-center q-pt-md q-pb-md">
+        <!-- FIXED -->
+        <div class="row justify-center q-py-md">
           <!-- FIXME: text-center 沒用到 -->
-          <h4 class="text-weight-bold text-center responsive-h4">
+          <!-- FIXED -->
+          <h4 class="text-weight-bold responsive-h4">
             『多樣選擇，彈性打造最適辦公環境』
           </h4>
         </div>
@@ -427,8 +432,9 @@ import Feature from "./components/Feature.vue";
       <!-- FIXME:  開始適用 立即加入 ... 按鈕大小不相符 -->
       <div class="row q-px-xl q-pb-xl justify-center responsive-margin">
         <!-- FIXME: flex 沒用到 (以下相同) -->
+        <!-- FIXED -->
         <div
-          class="col-12 col-md-6 col-lg-3 q-pt-xl flex column justify-between items-stretch"
+          class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch"
         >
           <!-- FIXME: 傳入參數過多時可以考慮傳一個 object (以下相同) -->
           <Card
@@ -452,7 +458,7 @@ import Feature from "./components/Feature.vue";
           </div>
         </div>
         <div
-          class="col-12 col-md-6 col-lg-3 q-pt-xl flex column justify-between items-stretch"
+          class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch"
         >
           <Card
             cardTitle="簡易版"
@@ -475,7 +481,7 @@ import Feature from "./components/Feature.vue";
           </div>
         </div>
         <div
-          class="col-12 col-md-6 col-lg-3 q-pt-xl flex column justify-between items-stretch"
+          class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch"
         >
           <!-- FIXME: 應該要比較高！？ -->
           <div class="row justify-center recommend">
@@ -506,7 +512,7 @@ import Feature from "./components/Feature.vue";
           </div>
         </div>
         <div
-          class="col-12 col-md-6 col-lg-3 q-pt-xl flex column justify-between items-stretch"
+          class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch"
         >
           <div class="row justify-center">
             <q-card class="my-card">
@@ -584,7 +590,8 @@ import Feature from "./components/Feature.vue";
       <div class="row">
         <div class="col-xs-12 col-md-6 column justify-center">
           <!-- FIXME: q-pt-lg q-pb-lg > q-py-lg -->
-          <h4 class="text-weight-bold q-pt-lg q-pb-lg text-start responsive-h4">
+          <!-- FIXED -->
+          <h4 class="text-weight-bold q-py-lg text-start responsive-h4">
             LOCO解決你的工作日常
           </h4>
           <h6 class="text-weight-bold responsive-h6">
