@@ -61,12 +61,13 @@
 
 <script>
 /* FIXME: 目前專案習慣上字串會使用 單引號 （js 部分） */
+// FIXED
 export default {
-  name: "Card",
+  name: 'Card',
   props: {
     cardTitle: {
       type: String,
-      default: "免費版",
+      default: '免費版',
     },
     imageSrc: {
       type: String,
@@ -74,30 +75,30 @@ export default {
     // FIXME: 這邊的type應該是String 或者傳入的應該要是數字
     price: {
       type: Number,
-      default: "0",
+      default: '0',
     },
     text: {
       type: String,
-      default: "永久免費",
+      default: '永久免費',
     },
     account: {
       type: String,
-      default: "3個使用者帳號",
+      default: '3個使用者帳號',
     },
     // FIXME: 這邊的type應該是String 或者傳入的應該要是數字
     spreadSheetNum: {
       type: Number,
-      default: "3個",
+      default: '3個',
     },
     // FIXME: 這邊的type應該是String 或者傳入的應該要是數字
     materialCapacity: {
       type: Number,
-      default: "50MB",
+      default: '50MB',
     },
     // FIXME: 這邊的type應該是String 或者傳入的應該要是數字
     fileCapacity: {
       type: Number,
-      default: "1GB",
+      default: '1GB',
     },
   },
 };
