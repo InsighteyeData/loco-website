@@ -319,7 +319,7 @@ import Card from './components/card.vue';
         <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch">
           <div class="row justify-center">
             <q-card class="my-card">
-              <q-card-section class="crad-section">
+              <q-card-section class="card-section">
                 <div class="column justify-center items-center q-gutter-sm q-mt-md q-mb-md">
                   <div class="text-h4 justify-center items-center q-gutter-sm text-weight-bolder">企業版</div>
                   <!-- FIXME: style > class -->
