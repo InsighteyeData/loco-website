@@ -290,26 +290,26 @@ import Card from './components/card.vue';
       </div>
       <!-- FIXME: 建議 可以嘗試使用 v-for 跑內容相似的東西 -->
       <!-- FIXME:  開始適用 立即加入 ... 按鈕大小不相符 -->
-      <div class="row q-px-xl q-pb-xl justify-center responsive-margin">
+      <div class="row q-px-xl q-pb-xl justify-center items-center responsive-margin">
         <!-- FIXME: flex 沒用到 (以下相同) -->
         <!-- FIXED -->
         <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch">
           <!-- FIXME: 傳入參數過多時可以考慮傳一個 object (以下相同) -->
           <Card cardTitle="免費版" imageSrc="src/assets/card1.png" price="0" text="永久免費" account="3個使用者帳號" spreadSheetNum="3個" materialCapacity="50MB" fileCapacity="1GB" />
           <div class="row justify-center q-pt-lg">
-            <q-btn unelevated outline rounded label="開始試用" class="button q-mb-md q-mr-lg q-ml-lg card-btn-borded" />
+            <q-btn unelevated outline rounded label="開始試用" class="button q-mb-md q-mr-lg q-ml-lg card-btn-border" />
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch">
           <Card cardTitle="簡易版" imageSrc="src/assets/card2.png" price="700" text="月" account="1個使用者帳號" spreadSheetNum="20個" materialCapacity="5GB" fileCapacity="10GB" />
           <div class="row justify-center q-pt-lg">
-            <q-btn unelevated outline rounded label="立即加入" class="button q-mb-md q-mr-lg q-ml-lg card-btn-borded" />
+            <q-btn unelevated outline rounded label="立即加入" class="button q-mb-md q-mr-lg q-ml-lg card-btn-border" />
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch">
           <!-- FIXME: 應該要比較高！？ -->
           <div class="row justify-center recommend">
-            <q-btn unelevated rounded label="最推薦使用" class="recommend-card" />
+            <q-btn unelevated rounded label="最推薦使用" class="recommend-btn" />
           </div>
           <Card cardTitle="標準版" imageSrc="src/assets/card3.png" price="850" text="月" account="1個使用者帳號" spreadSheetNum="無上限" materialCapacity="5GB" fileCapacity="10GB" />
           <div class="row justify-center q-pt-md">
@@ -364,7 +364,7 @@ import Card from './components/card.vue';
 
           <div class="row justify-center q-pt-lg">
             <!-- q-mr-lg q-ml-lg > q-mx-lg  -->
-            <q-btn unelevated outline rounded label="專業諮詢洽談" class="button q-mb-md q-mr-lg q-ml-lg card-btn-borded" />
+            <q-btn unelevated outline rounded label="專業諮詢洽談" class="button q-mb-md q-mr-lg q-ml-lg card-btn-border" />
           </div>
         </div>
       </div>
@@ -465,13 +465,7 @@ import Card from './components/card.vue';
   }
 }
 /* FIXME: 沒用到 */
-.card-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  height: 100%;
-}
+/* FIXED */
 .my-card {
   width: 100%;
   max-width: 300px;
@@ -483,7 +477,8 @@ import Card from './components/card.vue';
 }
 
 /* FIXME: 拼錯字 */
-.crad-section {
+/* FIXED */
+.card-section {
   height: 426px;
   background-color: #ffd98c;
 }
@@ -498,7 +493,8 @@ import Card from './components/card.vue';
 }
 
 /* FIXME: 拼錯字 */
-.card-btn-borded {
+/* FIXED */
+.card-btn-border {
   width: 250px;
   background-color: #ffffff;
   color: #637e99;
@@ -509,7 +505,7 @@ import Card from './components/card.vue';
 .recommend {
   position: relative;
 }
-.recommend-card {
+.recommend-btn {
   position: absolute;
   top: -20px;
   z-index: 100;
