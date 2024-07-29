@@ -1,7 +1,7 @@
 <template>
   <div class="row justify-center">
     <q-card class="my-card">
-      <q-card-section class="crad-section">
+      <q-card-section class="card-section">
         <!-- FIXME: q-mt-md q-mb-md > q-my-md -->
         <!-- FIXED -->
         <div class="column justify-center items-center q-gutter-sm q-my-md">
@@ -10,7 +10,8 @@
           </div>
           <!-- 使用v-bind綁定src屬性 -->
           <!-- FIXME: style > class -->
-          <div style="height: 200px; width: 190px" class="flex items-center">
+          <!-- FIXED -->
+          <div class="flex items-center feature-img">
             <q-img :src="imageSrc" spinner-color="white" />
           </div>
 
@@ -27,7 +28,7 @@
 
       <q-card-actions vertical>
         <!-- FIXME: q-mb-md q-mt-md q-mr-md q-ml-md > q-ma-md -->
-        <!-- FIXE  -->
+        <!-- FIXED  -->
         <q-list class="row justify-start items-center q-ma-md">
           <q-item class="row justify-start items-center q-gutter-sm">
             <li>
@@ -67,8 +68,9 @@ export default {
       type: String,
     },
     // FIXME: 這邊的type應該是String 或者傳入的應該要是數字
+    // FIXED
     price: {
-      type: Number,
+      type: String,
       default: '0',
     },
     text: {
@@ -80,18 +82,21 @@ export default {
       default: '3個使用者帳號',
     },
     // FIXME: 這邊的type應該是String 或者傳入的應該要是數字
+    // FIXED
     spreadSheetNum: {
-      type: Number,
+      type: String,
       default: '3個',
     },
     // FIXME: 這邊的type應該是String 或者傳入的應該要是數字
+    // FIXED
     materialCapacity: {
-      type: Number,
+      type: String,
       default: '50MB',
     },
     // FIXME: 這邊的type應該是String 或者傳入的應該要是數字
+    // FIXED
     fileCapacity: {
-      type: Number,
+      type: String,
       default: '1GB',
     },
   },
@@ -104,8 +109,13 @@ export default {
   max-width: 290px;
 }
 /* FIXME: 拼錯字 */
-.crad-section {
+/* FIXED */
+.card-section {
   background-color: #ffd98c;
+}
+.feature-img {
+  height: 200px;
+  width: 190px;
 }
 .card-btn {
   color: #637e99;
