@@ -290,7 +290,8 @@ import Card from './components/card.vue';
       </div>
       <!-- FIXME: 建議 可以嘗試使用 v-for 跑內容相似的東西 -->
       <!-- FIXME:  開始適用 立即加入 ... 按鈕大小不相符 -->
-      <div class="row q-px-xl q-pb-xl justify-center items-center responsive-margin">
+      <!-- FIXED -->
+      <div class="row q-px-xl q-pb-xl justify-center items-end responsive-margin">
         <!-- FIXME: flex 沒用到 (以下相同) -->
         <!-- FIXED -->
         <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch">
@@ -306,13 +307,16 @@ import Card from './components/card.vue';
             <q-btn unelevated outline rounded label="立即加入" class="button q-mb-md q-mr-lg q-ml-lg card-btn-border" />
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch">
+        <div class="col-12 col-md-6 col-lg-3 column justify-between items-stretch">
           <!-- FIXME: 應該要比較高！？ -->
+          <!-- FIXED -->
           <div class="row justify-center recommend">
             <q-btn unelevated rounded label="最推薦使用" class="recommend-btn" />
           </div>
-          <Card cardTitle="標準版" imageSrc="src/assets/card3.png" price="850" text="月" account="1個使用者帳號" spreadSheetNum="無上限" materialCapacity="5GB" fileCapacity="10GB" />
-          <div class="row justify-center q-pt-md">
+          <div class="higher-card">
+            <Card cardTitle="標準版" imageSrc="src/assets/card3.png" price="850" text="月" account="1個使用者帳號" spreadSheetNum="無上限" materialCapacity="5GB" fileCapacity="10GB" />
+          </div>
+          <div class="row justify-center q-pt-lg">
             <q-btn unelevated rounded label="立即加入" class="q-mb-md card-btn-blue" />
           </div>
         </div>
@@ -427,6 +431,9 @@ import Card from './components/card.vue';
     margin-right: 80px;
     margin-left: 80px;
   }
+  .higher-card {
+    height: 650px;
+  }
 }
 @media (max-width: 600px) {
   .responsive-h2 {
@@ -489,7 +496,6 @@ import Card from './components/card.vue';
   font-size: 24px;
   font-weight: 900;
   border-width: 10px;
-  border: 2px solid;
 }
 
 /* FIXME: 拼錯字 */
