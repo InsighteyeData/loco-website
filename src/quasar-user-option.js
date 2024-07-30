@@ -5,6 +5,6 @@ export default {
   config: { cssAddon: true },
   components: {},
   plugins: {
-    // 这里可以配置 Quasar 插件，例如 Notify, Dialog 等
+    // 可放quasar套件
   },
 };
