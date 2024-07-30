@@ -32,12 +32,12 @@ export default {
         priceTag: { price: '$ 700', text: '/月', account: '1個使用者帳號' },
         content: {
           spreadSheetNum: '20個',
-          materialCapacity: '5MB',
+          materialCapacity: '5GB',
           fileCapacity: '10GB',
         },
       },
       cardData3: {
-        cardTitle: '簡易版',
+        cardTitle: '標準版',
         imageSrc: '/src/assets/card3.png',
         priceTag: { price: '$ 850', text: '/月', account: '1個使用者帳號' },
         content: {
@@ -345,7 +345,7 @@ export default {
       <div class="row q-px-xl q-pb-xl justify-center items-end responsive-margin">
         <!-- FIXME: flex 沒用到 (以下相同) -->
         <!-- FIXED -->
-        <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch">
+        <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between">
           <!-- FIXME: 傳入參數過多時可以考慮傳一個 object (以下相同) -->
           <!-- FIXED -->
           <Card :cardTitle="cardData1.cardTitle" :imageSrc="cardData1.imageSrc" :priceTag="cardData1.priceTag" :content="cardData1.content" />
@@ -353,13 +353,13 @@ export default {
             <q-btn unelevated outline rounded label="開始試用" class="button q-mb-md q-mr-lg q-ml-lg card-btn-border" href="https://loco.com.tw/#/register" target="_blank"/>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch">
+        <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between">
           <Card :cardTitle="cardData2.cardTitle" :imageSrc="cardData2.imageSrc" :priceTag="cardData2.priceTag" :content="cardData2.content" />
           <div class="row justify-center q-pt-lg">
             <q-btn unelevated outline rounded label="立即加入" class="button q-mb-md q-mr-lg q-ml-lg card-btn-border" href="https://loco.com.tw/#/register" target="_blank"/>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3 column justify-between items-stretch">
+        <div class="col-12 col-md-6 col-lg-3 column justify-between">
           <!-- FIXME: 應該要比較高！？ -->
           <!-- FIXED -->
           <div class="row justify-center recommend">
@@ -372,7 +372,7 @@ export default {
             <q-btn unelevated rounded label="立即加入" class="q-mb-md card-btn-blue" href="https://loco.com.tw/#/register" target="_blank"/>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch">
+        <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between">
           <Card :cardTitle="cardData4.cardTitle" :imageSrc="cardData4.imageSrc" :priceTag="cardData4.priceTag" :content="cardData4.content" />
           <div class="row justify-center q-pt-lg">
             <!-- FIXME:q-mr-lg q-ml-lg > q-mx-lg  -->

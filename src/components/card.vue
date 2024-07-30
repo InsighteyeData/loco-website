@@ -92,6 +92,7 @@ export default {
 /* FIXED */
 .card-section {
   background-color: #ffd98c;
+  height: 425px;
 }
 .feature-img {
   height: 200px;
