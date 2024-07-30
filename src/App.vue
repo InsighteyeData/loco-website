@@ -57,7 +57,8 @@ export default {
   <div class="column">
     <!-- nav bar -->
     <!-- FIXME: style="width: 100%" 無作用  -->
-    <div class="q-pa-lg row no-wrap items-start justify-start" style="width: 100%">
+    <!-- FIXED -->
+    <div class="q-pa-lg row no-wrap items-start justify-start">
       <q-img class="logo-size" src="src/assets/logo1.png" />
       <div class="q-pl-lg">
         <h5 class="text-weight-bold text-color responsive-h5">全方位資訊整合平台</h5>
