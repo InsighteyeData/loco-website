@@ -58,7 +58,7 @@ export default {
     <!-- nav bar -->
     <!-- FIXME: style="width: 100%" 無作用  -->
     <!-- FIXED -->
-    <div class="q-pa-lg row no-wrap items-start justify-start">
+    <div class="q-pa-lg row items-center justify-start">
       <q-img class="logo-size" src="src/assets/logo1.png" />
       <div class="q-pl-lg">
         <h5 class="text-weight-bold text-color responsive-h5">全方位資訊整合平台</h5>
@@ -524,7 +524,7 @@ export default {
 
 <style scoped>
 .logo-size {
-  height: 100%;
+  width: 100%;
   max-width: 120px;
 }
 .text-color {
