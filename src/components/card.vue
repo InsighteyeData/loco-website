@@ -16,11 +16,11 @@
           </div>
 
           <div class="row justify-center items-end q-gutter-sm">
-            <div class="text-h4 text-weight-bold">$ {{ price }}</div>
-            <div class="text-h5 text-weight-medium">/{{ text }}</div>
+            <div class="text-h4 text-weight-bold">{{ priceTag.price }}</div>
+            <div class="text-h5 text-weight-medium">{{ priceTag.text }}</div>
           </div>
           <hr />
-          <div class="text-h6 text-weight-medium">{{ account }}</div>
+          <div class="text-h6 text-weight-medium">{{ priceTag.account }}</div>
         </div>
       </q-card-section>
 
@@ -33,19 +33,19 @@
           <q-item class="row justify-start items-center q-gutter-sm">
             <li>
               <span class="text-h6 text-weight-medium">資料表總數量 </span>
-              <span class="text-h6 text-weight-bold">{{ spreadSheetNum }}</span>
+              <span class="text-h6 text-weight-bolder">{{ content.spreadSheetNum }}</span>
             </li>
           </q-item>
           <q-item class="row justify-start items-center q-gutter-sm">
             <li>
               <span class="text-h6 text-weight-medium">資料容量 </span>
-              <span class="text-h6 text-weight-bold">{{ materialCapacity }}</span>
+              <span class="text-h6 text-weight-bolder">{{ content.materialCapacity }}</span>
             </li>
           </q-item>
           <q-item class="row justify-start items-center q-gutter-sm">
             <li>
               <span class="text-h6 text-weight-medium">檔案容量 </span>
-              <span class="text-h6 text-weight-bold">{{ fileCapacity }}</span>
+              <span class="text-h6 text-weight-bolder">{{ content.fileCapacity }}</span>
             </li>
           </q-item>
         </q-list>
@@ -69,35 +69,15 @@ export default {
     },
     // FIXME: 這邊的type應該是String 或者傳入的應該要是數字
     // FIXED
-    price: {
-      type: String,
-      default: '0',
-    },
-    text: {
-      type: String,
-      default: '永久免費',
-    },
-    account: {
-      type: String,
-      default: '3個使用者帳號',
+    priceTag: {
+      type: Object,
+      default: () => ({ price: 0, text: '', account: '' }),
     },
     // FIXME: 這邊的type應該是String 或者傳入的應該要是數字
     // FIXED
-    spreadSheetNum: {
-      type: String,
-      default: '3個',
-    },
-    // FIXME: 這邊的type應該是String 或者傳入的應該要是數字
-    // FIXED
-    materialCapacity: {
-      type: String,
-      default: '50MB',
-    },
-    // FIXME: 這邊的type應該是String 或者傳入的應該要是數字
-    // FIXED
-    fileCapacity: {
-      type: String,
-      default: '1GB',
+    content: {
+      type: Object,
+      default: () => ({ spreadSheetNum: '', materialCapacity: '', fileCapacity: '' }),
     },
   },
 };

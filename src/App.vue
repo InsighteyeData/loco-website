@@ -1,4 +1,4 @@
-<script setup>
+<script>
 // FIXME: 沒有用到
 // FIXED
 // FIXME: 沒有用掉要移除
@@ -8,6 +8,57 @@ import Card from './components/card.vue';
 // FIXED
 // FIXME: 沒有用掉要移除
 // FIXED
+
+export default {
+  name: 'App',
+  components: {
+    Card,
+  },
+  data() {
+    return {
+      cardData1: {
+        cardTitle: '免費版',
+        imageSrc: '/src/assets/card1.png',
+        priceTag: { price: '$ 0', text: '/永久免費', account: '3個使用者帳號' },
+        content: {
+          spreadSheetNum: '3個',
+          materialCapacity: '50MB',
+          fileCapacity: '1GB',
+        },
+      },
+      cardData2: {
+        cardTitle: '簡易版',
+        imageSrc: '/src/assets/card2.png',
+        priceTag: { price: '$ 700', text: '/月', account: '1個使用者帳號' },
+        content: {
+          spreadSheetNum: '20個',
+          materialCapacity: '5MB',
+          fileCapacity: '10GB',
+        },
+      },
+      cardData3: {
+        cardTitle: '簡易版',
+        imageSrc: '/src/assets/card3.png',
+        priceTag: { price: '$ 850', text: '/月', account: '1個使用者帳號' },
+        content: {
+          spreadSheetNum: '無上限',
+          materialCapacity: '5GB',
+          fileCapacity: '10GB',
+        },
+      },
+      cardData4: {
+        cardTitle: '企業版',
+        imageSrc: '/src/assets/card4.png',
+        priceTag: { price: '聯絡我們' },
+        content: {
+          spreadSheetNum: '無上限',
+          materialCapacity: '無上限',
+          fileCapacity: '無上限',
+        },
+      },
+    };
+  },
+};
 </script>
 
 <template>
@@ -296,13 +347,14 @@ import Card from './components/card.vue';
         <!-- FIXED -->
         <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch">
           <!-- FIXME: 傳入參數過多時可以考慮傳一個 object (以下相同) -->
-          <Card cardTitle="免費版" imageSrc="src/assets/card1.png" price="0" text="永久免費" account="3個使用者帳號" spreadSheetNum="3個" materialCapacity="50MB" fileCapacity="1GB" />
+          <!-- FIXED -->
+          <Card :cardTitle="cardData1.cardTitle" :imageSrc="cardData1.imageSrc" :priceTag="cardData1.priceTag" :content="cardData1.content" />
           <div class="row justify-center q-pt-lg">
             <q-btn unelevated outline rounded label="開始試用" class="button q-mb-md q-mr-lg q-ml-lg card-btn-border" />
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch">
-          <Card cardTitle="簡易版" imageSrc="src/assets/card2.png" price="700" text="月" account="1個使用者帳號" spreadSheetNum="20個" materialCapacity="5GB" fileCapacity="10GB" />
+          <Card :cardTitle="cardData2.cardTitle" :imageSrc="cardData2.imageSrc" :priceTag="cardData2.priceTag" :content="cardData2.content" />
           <div class="row justify-center q-pt-lg">
             <q-btn unelevated outline rounded label="立即加入" class="button q-mb-md q-mr-lg q-ml-lg card-btn-border" />
           </div>
@@ -314,61 +366,18 @@ import Card from './components/card.vue';
             <q-btn unelevated rounded label="最推薦使用" class="recommend-btn" />
           </div>
           <div class="higher-card">
-            <Card cardTitle="標準版" imageSrc="src/assets/card3.png" price="850" text="月" account="1個使用者帳號" spreadSheetNum="無上限" materialCapacity="5GB" fileCapacity="10GB" />
+            <Card :cardTitle="cardData3.cardTitle" :imageSrc="cardData3.imageSrc" :priceTag="cardData3.priceTag" :content="cardData3.content" />
           </div>
           <div class="row justify-center q-pt-lg">
             <q-btn unelevated rounded label="立即加入" class="q-mb-md card-btn-blue" />
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch">
-          <div class="row justify-center">
-            <q-card class="my-card">
-              <q-card-section class="card-section">
-                <div class="column justify-center items-center q-gutter-sm q-mt-md q-mb-md">
-                  <div class="text-h4 justify-center items-center q-gutter-sm text-weight-bolder">企業版</div>
-                  <!-- FIXME: style > class -->
-                  <!-- FIXED -->
-                  <div class="flex items-center contact-card">
-                    <q-img src="src/assets/card4.png" spinner-color="white" />
-                  </div>
-
-                  <div class="row justify-center items-end q-gutter-sm">
-                    <div class="text-h4 text-weight-bold">聯絡我們</div>
-                  </div>
-                </div>
-              </q-card-section>
-
-              <q-separator />
-
-              <q-card-actions vertical>
-                <!-- q-mb-md q-mt-md q-mr-md q-ml-md > q-ma-lg -->
-                <q-list class="row justify-start items-center q-mb-md q-mt-md q-mr-md q-ml-md">
-                  <q-item class="row justify-start items-center q-gutter-sm">
-                    <li>
-                      <span class="text-h6 text-weight-medium">資料表總數量 </span>
-                      <span class="text-h6 text-weight-bold">無上限</span>
-                    </li>
-                  </q-item>
-                  <q-item class="row justify-start items-center q-gutter-sm">
-                    <li>
-                      <span class="text-h6 text-weight-medium">資料容量 </span>
-                      <span class="text-h6 text-weight-bold">無上限</span>
-                    </li>
-                  </q-item>
-                  <q-item class="row justify-start items-center q-gutter-sm">
-                    <li>
-                      <span class="text-h6 text-weight-medium">檔案容量 </span>
-                      <span class="text-h6 text-weight-bold">無上限</span>
-                    </li>
-                  </q-item>
-                </q-list>
-              </q-card-actions>
-            </q-card>
-          </div>
-
+          <Card :cardTitle="cardData4.cardTitle" :imageSrc="cardData4.imageSrc" :priceTag="cardData4.priceTag" :content="cardData4.content" />
           <div class="row justify-center q-pt-lg">
-            <!-- q-mr-lg q-ml-lg > q-mx-lg  -->
-            <q-btn unelevated outline rounded label="專業諮詢洽談" class="button q-mb-md q-mr-lg q-ml-lg card-btn-border" />
+            <!-- FIXME:q-mr-lg q-ml-lg > q-mx-lg  -->
+            <!-- FIXED -->
+            <q-btn unelevated outline rounded label="專業諮詢洽談" class="button q-mb-md q-mx-lg card-btn-border" />
           </div>
         </div>
       </div>
