@@ -90,7 +90,7 @@ export default {
           <h2 class="text-weight-bold responsive-h2">解決你的紙張魔咒</h2>
           <br />
         </div>
-        <div class="row justify-start q-pt-md">
+        <div class="row justify-start q-pt-lg">
           <q-btn unelevated rounded label="立即註冊" class="q-mb-md card-btn-blue" href="https://loco.com.tw/#/register" target="_blank" />
         </div>
       </div>
@@ -162,17 +162,17 @@ export default {
             <!-- FIXME: 建議 相似的結構，可以考慮拆成 component 重復使用 -->
             <!-- FIXME: text-center flex-col 沒用到 -->
             <!-- FIXED -->
-            <div class="col-xs-12 col-md-4 q-pr-md q-pb-md items-center justify-center">
+            <div class="col-xs-12 col-md-4 q-pr-md q-pb-md text-center">
               <!-- FIXME: 儘量使用 class 取代 style -->
               <!-- FIXED -->
               <q-img src="src/assets/feature1.png" fit="contain" spinner-color="white" class="feature-img" />
               <div class="column">
                 <!-- FIXME: q-pt-lg q-pb-lg > q-py-lg -->
                 <!-- FIXED -->
-                <h5 class="text-weight-bold q-py-lg text-center">無程式碼DIY專屬系統</h5>
+                <h4 class="text-weight-bold q-py-lg text-center responsive-h4">無程式碼DIY專屬系統</h4>
                 <!-- FIXME: 儘量使用 class 取代 style -->
                 <!-- FIXED: 移除沒有用的style -->
-                <div class="text-left">
+                <div class="text-left feature-margin">
                   <ul class="left-align">
                     <li>
                       <span class="text-h6 text-weight-medium text-subtitle1 text-start"> 系統欄位彈性擴充，像編輯 Excel般容易 </span>
@@ -189,15 +189,15 @@ export default {
             </div>
             <!-- FIXME: text-center flex-col 沒用到 -->
             <!-- FIXED -->
-            <div class="col-xs-12 col-md-4 q-pr-md q-pb-md flex items-center justify-center">
+            <div class="col-xs-12 col-md-4 q-pr-md q-pb-md text-center">
               <q-img src="src/assets/feature2.png" fit="contain" spinner-color="white" class="feature-img" />
               <div class="column">
                 <!-- FIXME: q-pt-lg q-pb-lg > q-py-lg -->
                 <!-- FIXED -->
-                <h5 class="text-weight-bold q-py-lg text-center">一站式整合服務</h5>
+                <h4 class="text-weight-bold q-py-lg text-center responsive-h4">一站式整合服務</h4>
                 <!-- FIXME: 儘量使用 class 取代 style -->
                 <!-- FIXED: 移除沒有用的style -->
-                <div class="text-left">
+                <div class="text-left feature-margin">
                   <ul class="left-align">
                     <li>
                       <span class="text-h6 text-weight-medium text-subtitle1"> 整合電子試算表、線上問卷、電子表單、分析統計模組等多項服務 </span>
@@ -211,15 +211,15 @@ export default {
             </div>
             <!-- FIXME: text-center flex-col 沒用到 -->
             <!-- FIXED -->
-            <div class="col-xs-12 col-md-4 flex items-center justify-center">
+            <div class="col-xs-12 col-md-4 text-center">
               <q-img src="src/assets/feature3.png" fit="contain" spinner-color="white" class="feature-img" />
               <div class="column">
                 <!-- FIXME: q-pt-lg q-pb-lg > q-py-lg -->
                 <!-- FIXED -->
-                <h5 class="text-weight-bold q-py-lg text-center">VIP控管資料存取</h5>
+                <h4 class="text-weight-bold q-py-lg text-center responsive-h4">VIP控管資料存取</h4>
                 <!-- FIXME: 儘量使用 class 取代 style -->
                 <!-- FIXED: 移除沒有用的style -->
-                <div class="text-left">
+                <div class="text-left feature-margin">
                   <ul class="left-align">
                     <li>
                       <span class="text-h6 text-weight-medium text-subtitle1"> 精準控管每張資料表的存取權限 </span>
@@ -247,7 +247,7 @@ export default {
               <div class="column">
                 <!-- FIXME: q-pt-lg q-pb-lg > q-py-lg -->
                 <!-- FIXED -->
-                <h5 class="text-weight-bold q-py-lg text-center">商業智慧視覺化分析</h5>
+                <h4 class="text-weight-bold q-py-lg text-center responsive-h4">商業智慧視覺化分析</h4>
                 <!-- FIXME: 儘量使用 class 取代 style -->
                 <!-- FIXED -->
                 <div class="text-left feature-margin">
@@ -272,7 +272,7 @@ export default {
               <div class="column">
                 <!-- FIXME: q-pt-lg q-pb-lg > q-py-lg -->
                 <!-- FIXED -->
-                <h5 class="text-weight-bold q-py-lg text-center">雲端資訊安全有保障</h5>
+                <h4 class="text-weight-bold q-py-lg text-center responsive-h4">雲端資訊安全有保障</h4>
                 <!-- FIXME: 儘量使用 class 取代 style -->
                 <!-- FIXED -->
                 <div class="text-left feature-margin">
@@ -350,16 +350,16 @@ export default {
           <!-- FIXED -->
           <Card :cardTitle="cardData1.cardTitle" :imageSrc="cardData1.imageSrc" :priceTag="cardData1.priceTag" :content="cardData1.content" />
           <div class="row justify-center q-pt-lg">
-            <q-btn unelevated outline rounded label="開始試用" class="button q-mb-md q-mr-lg q-ml-lg card-btn-border" href="https://loco.com.tw/#/register" target="_blank"/>
+            <q-btn unelevated outline rounded label="開始試用" class="button q-mb-md q-mr-lg q-ml-lg card-btn-border" href="https://loco.com.tw/#/register" target="_blank" />
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between">
           <Card :cardTitle="cardData2.cardTitle" :imageSrc="cardData2.imageSrc" :priceTag="cardData2.priceTag" :content="cardData2.content" />
           <div class="row justify-center q-pt-lg">
-            <q-btn unelevated outline rounded label="立即加入" class="button q-mb-md q-mr-lg q-ml-lg card-btn-border" href="https://loco.com.tw/#/register" target="_blank"/>
+            <q-btn unelevated outline rounded label="立即加入" class="button q-mb-md q-mr-lg q-ml-lg card-btn-border" href="https://loco.com.tw/#/register" target="_blank" />
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3 column justify-between">
+        <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between">
           <!-- FIXME: 應該要比較高！？ -->
           <!-- FIXED -->
           <div class="row justify-center recommend">
@@ -369,7 +369,7 @@ export default {
             <Card :cardTitle="cardData3.cardTitle" :imageSrc="cardData3.imageSrc" :priceTag="cardData3.priceTag" :content="cardData3.content" />
           </div>
           <div class="row justify-center q-pt-lg">
-            <q-btn unelevated rounded label="立即加入" class="q-mb-md card-btn-blue" href="https://loco.com.tw/#/register" target="_blank"/>
+            <q-btn unelevated rounded label="立即加入" class="q-mb-md card-btn-blue" href="https://loco.com.tw/#/register" target="_blank" />
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between">
@@ -377,7 +377,7 @@ export default {
           <div class="row justify-center q-pt-lg">
             <!-- FIXME:q-mr-lg q-ml-lg > q-mx-lg  -->
             <!-- FIXED -->
-            <q-btn unelevated outline rounded label="專業諮詢洽談" class="button q-mb-md q-mx-lg card-btn-border" href="https://line.me/R/ti/p/@288dmczm?from=page&accountId=288dmczm" target="_blank"/>
+            <q-btn unelevated outline rounded label="專業諮詢洽談" class="button q-mb-md q-mx-lg card-btn-border" href="https://line.me/R/ti/p/@288dmczm?from=page&accountId=288dmczm" target="_blank" />
           </div>
         </div>
       </div>
@@ -457,6 +457,8 @@ export default {
   .responsive-h5 {
     font-size: 20px;
   }
+}
+@media (max-width: 1024px) {
   .responsive-order {
     order: 2;
   }
