@@ -350,13 +350,13 @@ export default {
           <!-- FIXED -->
           <Card :cardTitle="cardData1.cardTitle" :imageSrc="cardData1.imageSrc" :priceTag="cardData1.priceTag" :content="cardData1.content" />
           <div class="row justify-center q-pt-lg">
-            <q-btn unelevated outline rounded label="開始試用" class="button q-mb-md q-mr-lg q-ml-lg card-btn-border" />
+            <q-btn unelevated outline rounded label="開始試用" class="button q-mb-md q-mr-lg q-ml-lg card-btn-border" href="https://loco.com.tw/#/register" target="_blank"/>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch">
           <Card :cardTitle="cardData2.cardTitle" :imageSrc="cardData2.imageSrc" :priceTag="cardData2.priceTag" :content="cardData2.content" />
           <div class="row justify-center q-pt-lg">
-            <q-btn unelevated outline rounded label="立即加入" class="button q-mb-md q-mr-lg q-ml-lg card-btn-border" />
+            <q-btn unelevated outline rounded label="立即加入" class="button q-mb-md q-mr-lg q-ml-lg card-btn-border" href="https://loco.com.tw/#/register" target="_blank"/>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 column justify-between items-stretch">
@@ -369,7 +369,7 @@ export default {
             <Card :cardTitle="cardData3.cardTitle" :imageSrc="cardData3.imageSrc" :priceTag="cardData3.priceTag" :content="cardData3.content" />
           </div>
           <div class="row justify-center q-pt-lg">
-            <q-btn unelevated rounded label="立即加入" class="q-mb-md card-btn-blue" />
+            <q-btn unelevated rounded label="立即加入" class="q-mb-md card-btn-blue" href="https://loco.com.tw/#/register" target="_blank"/>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between items-stretch">
@@ -377,7 +377,7 @@ export default {
           <div class="row justify-center q-pt-lg">
             <!-- FIXME:q-mr-lg q-ml-lg > q-mx-lg  -->
             <!-- FIXED -->
-            <q-btn unelevated outline rounded label="專業諮詢洽談" class="button q-mb-md q-mx-lg card-btn-border" />
+            <q-btn unelevated outline rounded label="專業諮詢洽談" class="button q-mb-md q-mx-lg card-btn-border" href="https://line.me/R/ti/p/@288dmczm?from=page&accountId=288dmczm" target="_blank"/>
           </div>
         </div>
       </div>
