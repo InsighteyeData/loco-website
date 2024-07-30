@@ -56,8 +56,6 @@ export default {
 <template>
   <div class="column">
     <!-- nav bar -->
-    <!-- FIXME: style="width: 100%" 無作用  -->
-    <!-- FIXED -->
     <div class="q-pa-lg row items-center justify-start">
       <q-img class="logo-size" src="src/assets/logo1.png" />
       <div class="q-pl-lg">
@@ -205,15 +203,11 @@ export default {
                 <div class="text-left feature-margin">
                   <ul class="left-align">
                     <li>
-                      <!-- FIXME: 過長換行 -->
-                      <!-- FIXED -->
                       <span class="text-h6 text-weight-medium text-subtitle1">
                         整合電子試算表、線上問卷、電子表單、分析統計模組等多項服務
                       </span>
                     </li>
                     <li>
-                      <!-- FIXME: 過長換行 -->
-                      <!-- FIXED -->
                       <span class="text-h6 text-weight-medium text-subtitle1">
                         從資料收集、整併、計算、分析，讓你不用再切換視窗
                       </span>
@@ -380,8 +374,6 @@ export default {
       </div>
       <div class="row q-px-xl q-pb-xl justify-center items-end responsive-margin">
         <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between">
-          <!-- FIXME: 過長換行 -->
-          <!-- FIXED -->
           <Card
             :cardTitle="cardData1.cardTitle"
             :imageSrc="cardData1.imageSrc"
@@ -389,8 +381,6 @@ export default {
             :content="cardData1.content"
           />
           <div class="row justify-center q-pt-lg">
-            <!-- FIXME: 過長換行 -->
-            <!-- FIXED -->
             <q-btn
               unelevated
               outline
@@ -403,8 +393,6 @@ export default {
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between">
-          <!-- FIXME: 過長換行 -->
-          <!-- FIXED -->
           <Card
             :cardTitle="cardData2.cardTitle"
             :imageSrc="cardData2.imageSrc"
@@ -412,8 +400,6 @@ export default {
             :content="cardData2.content"
           />
           <div class="row justify-center q-pt-lg">
-            <!-- FIXME: 過長換行 -->
-            <!-- FIXED -->
             <q-btn
               unelevated
               outline
@@ -430,8 +416,6 @@ export default {
             <q-btn unelevated rounded label="最推薦使用" class="recommend-btn" />
           </div>
           <div class="higher-card">
-            <!-- FIXME: 過長換行 -->
-            <!-- FIXED -->
             <Card
               :cardTitle="cardData3.cardTitle"
               :imageSrc="cardData3.imageSrc"
@@ -440,8 +424,6 @@ export default {
             />
           </div>
           <div class="row justify-center q-pt-lg">
-            <!-- FIXME: 過長換行 -->
-            <!-- FIXED -->
             <q-btn
               unelevated
               rounded
@@ -453,8 +435,6 @@ export default {
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 q-pt-xl column justify-between">
-          <!-- FIXME: 過長換行 -->
-          <!-- FIXED -->
           <Card
             :cardTitle="cardData4.cardTitle"
             :imageSrc="cardData4.imageSrc"
@@ -462,8 +442,6 @@ export default {
             :content="cardData4.content"
           />
           <div class="row justify-center q-pt-lg">
-            <!-- FIXME: 過長換行 -->
-            <!-- FIXED -->
             <q-btn
               unelevated
               outline
